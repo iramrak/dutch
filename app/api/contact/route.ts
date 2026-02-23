@@ -3,11 +3,11 @@ import nodemailer from 'nodemailer'
 
 export async function POST(req: Request) {
   try {
-    const { name, email } = await req.json()
+    const { name, email, message } = await req.json()
 
-    if (!name || !email) {
+    if (!name || !email || !message) {
       return NextResponse.json(
-        { error: 'Name and email are required' },
+        { error: 'Name, email and message are required' },
         { status: 400 }
       )
     }
@@ -22,7 +22,7 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: `"Dutch Lessons Website" <${process.env.GMAIL_USER}>`,
-      to: 'b.th.lohmann@gmail.com',
+      to: 'thesaramark1992@gmail.com',
       subject: `Новая заявка с сайта от ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -37,6 +37,10 @@ export async function POST(req: Request) {
             <tr style="background: #f9f9f9;">
               <td style="padding: 10px; font-weight: bold; color: #555;">Email:</td>
               <td style="padding: 10px; color: #222;">${email}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; font-weight: bold; color: #555; vertical-align: top;">Сообщение:</td>
+              <td style="padding: 10px; color: #222; white-space: pre-wrap;">${message}</td>
             </tr>
           </table>
           <p style="margin-top: 20px; font-size: 12px; color: #999;">

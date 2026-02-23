@@ -4,10 +4,10 @@ import { useLanguage } from '@/app/LanguageContext'
 
 export default function ContactForm() {
   const { t } = useLanguage()
-  const [formData, setFormData] = useState({ name: '', email: '' })
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
@@ -25,7 +25,7 @@ export default function ContactForm() {
       if (!res.ok) throw new Error('Failed to send')
 
       setStatus('success')
-      setFormData({ name: '', email: '' })
+      setFormData({ name: '', email: '', message: '' })
 
       setTimeout(() => setStatus('idle'), 4000)
     } catch {
@@ -69,6 +69,16 @@ export default function ContactForm() {
             required
             disabled={status === 'loading'}
             className="rounded-2xl px-6 py-4 outline-none bg-[#F0F0F0] disabled:opacity-50"
+          />
+          <textarea
+            name="message"
+            placeholder={t('forms', 'Message')}
+            value={formData.message}
+            onChange={handleChange}
+            required
+            disabled={status === 'loading'}
+            rows={4}
+            className="rounded-2xl px-6 py-4 outline-none bg-[#F0F0F0] disabled:opacity-50 resize-none"
           />
           <button
             type="submit"

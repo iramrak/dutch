@@ -6,7 +6,7 @@ import { useLanguage } from '@/app/LanguageContext'
 export default function PopupForm() {
   const { t } = useLanguage()
   const { closePopup } = usePopup()
-  const [formData, setFormData] = useState({ name: '', email: '' })
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -28,7 +28,7 @@ export default function PopupForm() {
       if (!res.ok) throw new Error('Failed to send')
 
       setStatus('success')
-      setFormData({ name: '', email: '' })
+      setFormData({ name: '', email: '', message: '' })
       setTimeout(() => closePopup(), 2000)
     } catch {
       setStatus('error')
@@ -67,6 +67,16 @@ export default function PopupForm() {
               required
               disabled={status === 'loading'}
               className="border bg-white border-gray-300 p-4 rounded-xl focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
+            />
+            <textarea
+              name="message"
+              placeholder={t('popup', 'Message')}
+              value={formData.message}
+              onChange={handleChange}
+              required
+              disabled={status === 'loading'}
+              rows={3}
+              className="border bg-white border-gray-300 p-4 rounded-xl focus:ring-2 focus:ring-blue-500 disabled:opacity-50 resize-none"
             />
 
             <button
