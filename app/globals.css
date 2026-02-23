@@ -1,0 +1,5 @@
+@import "tailwindcss";
+:root { --header-h: 64px; }
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: var(--header-h); }
+body { font-family: var(--font-onest), 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif; }
