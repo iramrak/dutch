@@ -36,7 +36,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <section className="flex flex-col md:flex justify-between bg-white rounded-2xl p-6 mx-auto my-10 bg-[url('/form.png')] bg-size-[800px] lg:bg-[url('/form.webp')] lg:bg-size-[700px] bg-no-repeat bg-right-top" id='Contacts'>
+      <section className="flex flex-col md:flex justify-between bg-white rounded-2xl p-6 mx-auto my-10 bg-[url('/form.png')] bg-size-[800px] lg:bg-[url('/form.webp')] lg:bg-right-bottom lg:bg-size-[700px] bg-no-repeat bg-right-top" id='Contacts'>
         <div className="mb-6 md:mb-0">
           <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-2">
             {t('forms', 'Title')}
