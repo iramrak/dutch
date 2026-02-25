@@ -17,14 +17,11 @@ const onest = Onest({
 export const metadata: Metadata = {
   title: "Make My Dutch || Уроки нидерландского языка онлайн",
   description:
-    "Онлайн-уроки нидерландского языка с преподавателем Басом. Более 30 лет опыта, индивидуальные занятия и профессиональная методика обучения.",
+    "🇳🇱 Онлайн-уроки нидерландского с носителем. Преподаватель Бас (30 лет опыта). Подготовка к NT2, интеграции и жизни в Нидерландах. Запишитесь на первый урок!",
   keywords: [
-    // 🇷🇺 Russian
-    "нидерландский язык онлайн, уроки нидерландского, курсы нидерландского языка, репетитор нидерландского, нидерландский язык для русских, индивидуальные занятия, подготовка к NT2, нидерландский с носителем, разговорный нидерландский, голландский язык онлайн, эффективное обучение",
-    // 🇳🇱 Dutch
-    "Nederlands leren online, privélessen Nederlands, Nederlandse taalcursus, Nederlands voor expats, NT2-examen voorbereiding, leren met native speaker, taallessen op maat, effectief Nederlands leren, flexibele lessen",
-    // 🇬🇧 English
-    "Learn Dutch online, Dutch tutor, private Dutch lessons, NT2 preparation, Dutch for expats, learn Dutch fast, professional Dutch teacher, flexible online Dutch lessons"
+    "курсы нидерландского языка онлайн, репетитор нидерландского, нидерландский с носителем, подготовка к экзамену NT2, голландский язык для переезда, уроки нидерландского по скайпу, разговорный нидерландский",
+    "nederlands leren online, privélessen nederlands, cursus nederlands nt2, inburgeringsexamen oefenen, nederlands voor expats, native speaker nederlands docent, taalles op maat",
+    "learn dutch online, private dutch tutor, dutch lessons for expats, nt2 exam preparation online, native dutch teacher, conversational dutch course, dutch language tutoring"
   ],
   openGraph: {
     title: "Make My Dutch — Learn Dutch with Bas",
