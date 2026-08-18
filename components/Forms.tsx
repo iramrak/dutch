@@ -1,9 +1,9 @@
 'use client'
 import { useState } from 'react'
-import { useLanguage } from '@/app/LanguageContext'
+import { useTranslations } from 'next-intl'
 
 export default function ContactForm() {
-  const { t } = useLanguage()
+  const t = useTranslations('forms')
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
@@ -39,10 +39,10 @@ export default function ContactForm() {
       <section className="flex flex-col md:flex justify-between bg-white rounded-2xl p-6 mx-auto my-10 bg-[url('/form.png')] bg-size-[800px] lg:bg-[url('/form.webp')] lg:bg-right-bottom lg:bg-size-[700px] bg-no-repeat bg-right-top" id='Contacts'>
         <div className="mb-6 md:mb-0">
           <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-2">
-            {t('forms', 'Title')}
+            {t('Title')}
           </h2>
           <p className="text-gray-600 text-sm md:text-base">
-            {t('forms', 'Subtitle')}
+            {t('Subtitle')}
           </p>
         </div>
 
@@ -53,7 +53,7 @@ export default function ContactForm() {
           <input
             name="name"
             type="text"
-            placeholder={t('forms', 'Name')}
+            placeholder={t('Name')}
             value={formData.name}
             onChange={handleChange}
             required
@@ -63,7 +63,7 @@ export default function ContactForm() {
           <input
             name="email"
             type="email"
-            placeholder={t('forms', 'Email')}
+            placeholder={t('Email')}
             value={formData.email}
             onChange={handleChange}
             required
@@ -72,7 +72,7 @@ export default function ContactForm() {
           />
           <textarea
             name="message"
-            placeholder={t('forms', 'Message')}
+            placeholder={t('Message')}
             value={formData.message}
             onChange={handleChange}
             required
@@ -85,7 +85,7 @@ export default function ContactForm() {
             disabled={status === 'loading'}
             className="bg-[#3C88FF] text-white font-semibold py-4 rounded-2xl hover:bg-blue-700 transition disabled:opacity-60 disabled:cursor-not-allowed"
           >
-            {status === 'loading' ? '...' : t('forms', 'Btn')}
+            {status === 'loading' ? '...' : t('Btn')}
           </button>
         </form>
       </section>

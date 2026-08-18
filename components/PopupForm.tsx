@@ -1,10 +1,10 @@
 'use client'
 import { usePopup } from '../app/PopupContext'
 import { useState } from 'react'
-import { useLanguage } from '@/app/LanguageContext'
+import { useTranslations } from 'next-intl'
 
 export default function PopupForm() {
-  const { t } = useLanguage()
+  const t = useTranslations('popup')
   const { closePopup } = usePopup()
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
 
@@ -46,12 +46,12 @@ export default function PopupForm() {
           ✖
         </button>
         <div className="mt-[25px] lg:my-[5%]">
-          <h2 className='text-center text-white text-[36px] font-medium leading-[35px]'>{t('popup', 'Title')}</h2>
-          <p className='text-center text-white opacity-80 text-16px leading-[18px] mt-[6px] lg:px-[20%]'>{t('popup', 'Sub')}</p>
+          <h2 className='text-center text-white text-[36px] font-medium leading-[35px]'>{t('Title')}</h2>
+          <p className='text-center text-white opacity-80 text-16px leading-[18px] mt-[6px] lg:px-[20%]'>{t('Sub')}</p>
           <form onSubmit={handleSubmit} className="flex flex-col gap-3 mt-[30px] lg:px-[12%]">
             <input
               name="name"
-              placeholder={t('popup', 'Name')}
+              placeholder={t('Name')}
               value={formData.name}
               onChange={handleChange}
               required
@@ -61,7 +61,7 @@ export default function PopupForm() {
             <input
               type="email"
               name="email"
-              placeholder={t('popup', 'Email')}
+              placeholder={t('Email')}
               value={formData.email}
               onChange={handleChange}
               required
@@ -70,7 +70,7 @@ export default function PopupForm() {
             />
             <textarea
               name="message"
-              placeholder={t('popup', 'Message')}
+              placeholder={t('Message')}
               value={formData.message}
               onChange={handleChange}
               required
@@ -84,48 +84,11 @@ export default function PopupForm() {
               disabled={status === 'loading'}
               className="bg-black text-white p-4 rounded-xl disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {status === 'loading' ? '...' : t('popup', 'Send')}
+              {status === 'loading' ? '...' : t('Send')}
             </button>
           </form>
         </div>
       </div>
-      {/* <div className="bg-white w-[90%] max-w-md rounded-2xl p-6 relative shadow-xl animate-fadeIn">
-        <button
-          onClick={closePopup}
-          className="absolute top-3 right-3 text-gray-500 hover:text-black"
-        >
-          ✖
-        </button>
-
-        <h2 className="text-2xl font-semibold mb-4 mt-2 text-center">{t('popup','Title')}</h2>
-
-        <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-          <input
-            name="name"
-            placeholder={t('popup','Name')}
-            value={formData.name}
-            onChange={handleChange}
-            required
-            className="border border-gray-300 p-2 rounded-md focus:ring-2 focus:ring-blue-500"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder={t('popup','Email')}
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="border border-gray-300 p-2 rounded-md focus:ring-2 focus:ring-blue-500"
-          />
-
-          <button
-            type="submit"
-            className="bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
-          >
-            {t('popup','Send')}
-          </button>
-        </form>
-      </div> */}
     </div>
   )
 }

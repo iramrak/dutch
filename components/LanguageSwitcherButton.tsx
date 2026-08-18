@@ -1,10 +1,12 @@
 'use client'
-import { useState, useRef, useEffect } from 'react'
-import { useLanguage } from '../app/LanguageContext'
+import { useState, useRef, useEffect, useTransition } from 'react'
+import { useLocale } from 'next-intl'
+import { useRouter, usePathname } from '@/i18n/navigation'
 import Image from 'next/image'
+import type { Locale } from '@/i18n/routing'
 
 interface LangOption {
-  code: 'ru' | 'en' | 'nl'
+  code: Locale
   label: string
   flag: string
 }
@@ -16,7 +18,10 @@ const LANGS: LangOption[] = [
 ]
 
 export default function LanguageSwitcherDropdown() {
-  const { lang, setLang } = useLanguage()
+  const locale = useLocale()
+  const router = useRouter()
+  const pathname = usePathname()
+  const [isPending, startTransition] = useTransition()
   const [open, setOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
@@ -30,13 +35,21 @@ export default function LanguageSwitcherDropdown() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  const currentLang = LANGS.find(l => l.code === lang)!
+  const currentLang = LANGS.find(l => l.code === locale)!
+
+  const switchLocale = (newLocale: Locale) => {
+    setOpen(false)
+    startTransition(() => {
+      router.replace(pathname, { locale: newLocale })
+    })
+  }
 
   return (
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center px-1 py-1"
+        disabled={isPending}
       >
         <Image src={currentLang.flag} alt={currentLang.label} width={40} height={40} className="rounded-full" />
         <svg
@@ -54,10 +67,7 @@ export default function LanguageSwitcherDropdown() {
           {LANGS.map(l => (
             <button
               key={l.code}
-              onClick={() => {
-                setLang(l.code)
-                setOpen(false)
-              }}
+              onClick={() => switchLocale(l.code)}
               className="flex items-center gap-2 w-full px-3 py-2 hover:bg-blue-100 transition"
             >
               <Image src={l.flag} alt={l.label} width={20} height={20} className="rounded-full" />

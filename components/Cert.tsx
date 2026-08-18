@@ -1,13 +1,13 @@
 'use client'
 import Image from 'next/image';
 import React from 'react'
-import { useLanguage } from '@/app/LanguageContext'
+import { useTranslations } from 'next-intl'
 
 export default function Cert() {
-    const { t } = useLanguage();
+    const t = useTranslations('cert');
     return (
         <article className='mt-[100px] mx-[15px]'>
-            <h1 className='text-[36px] font-semibold leading-[36px] lg:text-[45px] lg:leading-[50px] lg:w-[33%]'>{t('cert','Title')}</h1>
+            <h1 className='text-[36px] font-semibold leading-[36px] lg:text-[45px] lg:leading-[50px] lg:w-[33%]'>{t('Title')}</h1>
             <div className="flex-row mt-[25px] lg:mt-[50px] lg:flex justify-between lg:justify-center">
                 <section>
                     <Image src={'/CertificatesOne.webp'} alt='Certificates one' width={324} height={380} className='lg:w-[510px] w-full'/>

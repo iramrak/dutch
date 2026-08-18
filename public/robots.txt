@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://make-mydutch.com
+
+# Sitemaps
+Sitemap: https://make-mydutch.com/sitemap.xml

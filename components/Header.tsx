@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { useLanguage } from '../app/LanguageContext'
+import { useTranslations } from 'next-intl'
 import LanguageSwitcherButton from './LanguageSwitcherButton'
 import Image from 'next/image'
 import { usePopup } from '../app/PopupContext'
@@ -8,18 +8,18 @@ import { usePopup } from '../app/PopupContext'
 
 
 export default function Header() {
-  const { t } = useLanguage()
+  const t = useTranslations('header')
   const { openPopup } = usePopup()
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
   const navLinks = [
-    { href: '#Education', label: t('header', 'Education') },
-    { href: '#About', label: t('header', 'About') },
-    { href: '#Rew', label: t('header', 'Rew') },
-    { href: '#FAQ', label: t('header', 'FAQ') },
-    { href: '#Contacts', label: t('header', 'Contacts') },
+    { href: '#Education', label: t('Education') },
+    { href: '#About', label: t('About') },
+    { href: '#Rew', label: t('Rew') },
+    { href: '#FAQ', label: t('FAQ') },
+    { href: '#Contacts', label: t('Contacts') },
   ]
 
   return (
@@ -41,7 +41,7 @@ export default function Header() {
           <div className="flex gap-6 items-center">
             <LanguageSwitcherButton />
             <button className="bg-blue-500 text-white px-10 py-3 rounded-[14px]" onClick={openPopup}>
-              <p className='font-medium'>{t('header', 'Btn')}</p>
+              <p className='font-medium'>{t('Btn')}</p>
             </button>
           </div>
         </nav>
@@ -79,7 +79,7 @@ export default function Header() {
               </a>
             ))}
             <button className="bg-blue-500 text-white px-4 py-2 rounded-[12px]" onClick={openPopup}>
-              {t('header', 'Btn')}
+              {t('Btn')}
             </button>
           </nav>
         </div>

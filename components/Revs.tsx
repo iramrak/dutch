@@ -1,27 +1,28 @@
 'use client';
 import React from 'react';
-import { useLanguage } from '@/app/LanguageContext';
+import { useTranslations } from 'next-intl';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Image from 'next/image';
 
 export default function Revs() {
-  const { t } = useLanguage();
+  const t = useTranslations('revs');
+  const tBaby = useTranslations('baby');
 
   const reviews = [
     {
-      text: t('revs', 'cardOneRev'),
-      name: t('revs', 'nameOne'),
+      text: t('cardOneRev'),
+      name: t('nameOne'),
       img: '/NuPfp.png',
     },
     {
-      text: t('revs', 'cardTwoRev'),
-      name: t('revs', 'nameTwo'),
+      text: t('cardTwoRev'),
+      name: t('nameTwo'),
       img: '/EyPfp.png',
     },
     {
-      text: t('revs', 'cardThreeRev'),
-      name: t('revs', 'nameThree'),
+      text: t('cardThreeRev'),
+      name: t('nameThree'),
       img: '/UPfp.png',
     },
     {
@@ -43,7 +44,7 @@ export default function Revs() {
   return (
     <article className="mb-[50px] mt-[900px] lg:mt-[600px]" id="Rew">
       <h1 className="text-[36px] font-semibold leading-[36px] lg:w-[40%] lg:text-[50px] lg:leading-[50px]">
-        {t('baby', 'Title')}
+        {tBaby('Title')}
       </h1>
       <Swiper
         spaceBetween={20}

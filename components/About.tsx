@@ -1,21 +1,21 @@
 'use client'
 import React from 'react'
-import { useLanguage } from '@/app/LanguageContext'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image';
 import { usePopup } from '../app/PopupContext'
 
 
 export default function About() {
-    const { t } = useLanguage();
+    const t = useTranslations('aboutme');
     const { openPopup } = usePopup()
     return (
     <article className='mt-[100px] lg:my-[150px] mx-[15px] flex-row lg:flex' id='About'>
         <section className='lg:w-[65%] lg:mr-[7%]'>
-            <h1 className='text-[36px] font-semibold leading-[36px] mb-[15px] lg:text-[50px] lg:leading-[45px] lg:mb-[35px]'>{t('aboutme','Title')}</h1>
-            <p className='text-[12px] opacity-80 mb-[7px] lg:text-[16px] lg:leading-[24px] lg:mb-[10px] '>{t('aboutme','SubOne')}</p>
-            <p className='text-[12px] opacity-80 mb-[7px] lg:text-[16px] lg:leading-[24px] lg:mb-[10px] '>{t('aboutme','SubTwo')}</p>
+            <h1 className='text-[36px] font-semibold leading-[36px] mb-[15px] lg:text-[50px] lg:leading-[45px] lg:mb-[35px]'>{t('Title')}</h1>
+            <p className='text-[12px] opacity-80 mb-[7px] lg:text-[16px] lg:leading-[24px] lg:mb-[10px] '>{t('SubOne')}</p>
+            <p className='text-[12px] opacity-80 mb-[7px] lg:text-[16px] lg:leading-[24px] lg:mb-[10px] '>{t('SubTwo')}</p>
             <ul className='text-[12px] opacity-80 mb-[25px] lg:text-[16px] lg:leading-[24px] list-none space-y-2'>
-                {t('aboutme', 'SubThree')
+                {t('SubThree')
                     .split('✔')
                     .filter(Boolean)
                     .map((item: string, i: number) => (
@@ -26,7 +26,7 @@ export default function About() {
                     ))}
             </ul>
             <button className='bg-[#3C88FF] w-full lg:w-[400px] rounded-[18px] text-white' onClick={openPopup}>
-                <p className='my-[24px]'>{t('aboutme','Btn')}</p>
+                <p className='my-[24px]'>{t('Btn')}</p>
             </button>
         </section>
         <aside className='mt-[25px] lg:mt-[0px] lg:w-[65%] flex justify-center lg:justify-end'>

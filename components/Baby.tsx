@@ -1,15 +1,12 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import { useLanguage } from '@/app/LanguageContext'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, FreeMode } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 
 export default function Baby() {
-  const { t } = useLanguage()
-
     const certs = [
     { img: '/baby/CertificatesOne.webp', alt: 'Certificate 1' },
     { img: '/baby/CertificatesTwo.webp', alt: 'Certificate 2' },

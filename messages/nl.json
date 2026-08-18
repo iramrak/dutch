@@ -1,0 +1,149 @@
+{
+  "Metadata": {
+    "title": "Make My Dutch — Leer Nederlands online met een native speaker",
+    "description": "Privé-lessen Nederlands met een moedertaalspreker. Meer dan 30 jaar ervaring. NT2-voorbereiding, spreekvaardigheid en gepersonaliseerd leren.",
+    "ogTitle": "Make My Dutch — Leer Nederlands met Bas",
+    "ogDescription": "Leer online Nederlands met Bas — professionele docent met meer dan 30 jaar ervaring. Individuele lessen voor Russisch-, Engels- en Nederlandstaligen."
+  },
+  "HomePage": {
+    "title": "Welkom bij Make My Dutch"
+  },
+  "header": {
+    "Education": "Onderwijs",
+    "About": "Over mij",
+    "Rew": "Recensies",
+    "FAQ": "FAQ",
+    "Contacts": "Contacten",
+    "Btn": "Vraag een consult aan"
+  },
+  "hero": {
+    "Main": "Leer Nederlands met professionele, individuele aanpak \ud83c\uddf3\ud83c\uddf1",
+    "Sub": "Alleen privélessen, een-op-een, met een native speaker. Meer dan 30 jaar ervaring. Maximale aandacht, speciaal voor jou.",
+    "Btn": "Neem een \u200b\u200bproefles"
+  },
+  "indev": {
+    "Title": "Waarom individueel",
+    "MainOne": "Individuele lessen",
+    "MainTwo": "Een leertempo dat past bij jou",
+    "MainThree": "We zullen werken aan wat nog beter kan",
+    "SubOne": "Je krijgt de volledige aandacht van de docent — elke les is op jou afgestemd.",
+    "SubTwo": "Je kunt leren in je eigen tempo – zonder tijdsdruk en met vertrouwen in een goed resultaat.",
+    "SubThree": "We gaan doelgericht werken om je zo soepel mogelijk Nederlands te leren en te leren spreken."
+  },
+  "whyme": {
+    "Title": "Waarom kiezen voor lessen met mij?",
+    "MainOne": "Persoonlijke aanpak",
+    "MainTwo": "Goede resultaten door jarenlange ervaring",
+    "MainThree": "Leren zonder taalbarrières",
+    "MainFour": "Flexibiliteit en gemak",
+    "MainFive": "Professionele training",
+    "SubOne": "Elke les is op jou afgestemd: jouw tempo, op jouw manier van leren, op jouw prioriteiten. Geen standaardformules — alleen effectieve, praktische lessen.",
+    "SubTwo": "In de ruim 30 jaar die ik les geef, hebben tientallen cursisten en studenten goed Nederlands leren spreken met een goede uitspraak. Mijn methode is vooral gebaseerd op praktijk, maar een klassieke theoretische ondergrond ontbreekt zeker niet. ",
+    "SubThree": "Ik kan alles uitleggen in het Nederlands, Engels of Russisch. We houden het verder eenvoudig en duidelijk.",
+    "SubFour": "Je hebt veel ruimte om zelf de tijd en het formaat van je lessen te bepalen. Je kunt leren in je eigen tempo. Zonder gejakker, zonder stress.",
+    "SubFive": "Dit zijn niet zomaar lessen – dit is leren met aandacht voor detail voor wie waarde hecht aan professionaliteit en ervaring."
+  },
+  "aboutme": {
+    "Title": "Waarom kiezen mensen voor mijn lessen?",
+    "SubOne": "Mijn naam is Bas Lohmann. Ik ben een moedertaalspreker van het Nederlands en een professionele docent met meer dan 30 jaar ervaring, zowel in de academische wereld als in het bedrijfsleven.",
+    "SubTwo": "Ik geef Nederlands en Engels aan Russisch- en Engelstalige cursisten, studenten en aan expats.",
+    "SubThree": "✔ Native speaker Nederlands ✔ Vloeiend in Russisch en Engels (CELTA) ✔ Ervaring met individuele en groepslessen",
+    "Btn": "Proefles aanvragen"
+  },
+  "cert": {
+    "Title": "Mijn certificaten en prestaties"
+  },
+  "aboutClasses": {
+    "Title": "Wat je kunt verwachten tijdens de lessen",
+    "MainOne": "Spreekvaardigheid zo vroeg mogelijk",
+    "MainTwo": "Individuele aanpak",
+    "MainThree": "Onderdompeling in de levende taal",
+    "SubOne": "Je begint al in een vroeg stadium Nederlands te spreken, op je gemak en met professionele ondersteuning van een ervaren docent.",
+    "SubTwo": "Elke les is zoveel mogelijk afgestemd op jouw niveau, interesses en prioriteiten.",
+    "SubThree": "Leer met echte situaties, voorbeelden en zinnen die je in Nederland hoort."
+  },
+  "resolts": {
+    "Title": "Jouw resultaat na de cursus",
+    "MainOne": "Leer vloeiend spreken",
+    "MainTwo": "Je begint de locals te verstaan",
+    "MainThree": "Zelfvertrouwen door overzichtelijkheid",
+    "SubOne": "Je begint natuurlijk en vol vertrouwen te spreken – zonder angst of lange pauzes.",
+    "SubTwo": "Je hebt geen moeite Nederlands te begrijpen en je kunt gesprekken in het Nederlands makkelijk volgen.",
+    "SubThree": "Je krijgt een goede uitspraak, een sterke grammaticale basis en genoeg zelfvertrouwen om vlot te gaan communiceren in het Nederlands."
+  },
+  "premm": {
+    "Title": "Mijn lessen zijn van hoog niveau, bedoeld voor wie goede kwaliteit belangrijk vindt.",
+    "Btn": "Vraag een proefles aan"
+  },
+  "popup": {
+    "Title": "Meld je aan voor een proefles",
+    "Email": "Jouw@Email.nl",
+    "Name": "jouw naam",
+    "Message": "Jouw bericht",
+    "Send": "Laat een verzoek achter",
+    "Sub": "Laten we elkaar leren kennen, je niveau bepalen en laten zien hoe je de les kunt voltooien.",
+    "post": "Wij nemen binnen 1 uur contact met u op!"
+  },
+  "revs": {
+    "Title": "Wat mijn studenten zeggen",
+    "cardOneRev": "He integrates contemporary materials…, so that students not only learn the language but also gain a living sense of the society behind it. He knows how to give every student the feeling being… supported, and capable of progress as he provides constructive feedback. ",
+    "cardTwoRev": "…combines his deep knowledge of the language with high level teaching skills. Bas' teaching method is perfectly structured. He guides you through the learning process on a step-by-step basis, knowing where the difficulties are: in such a manner that you build a solid basis. ",
+    "cardThreeRev": "… Given his professional background, he was able to give his pupils a solid foundation of grammar, vocabulary and confidence in the language. He also shared with us his deep insights in society and etiquette… We recommend Bas for your language tuition at any time.  ",
+    "nameOne": "NU",
+    "nameTwo": "Ernst&Young",
+    "nameThree": "UNILEVER"
+  },
+  "baby": {
+    "Title": "Aanbevelingsbrieven"
+  },
+  "faq": {
+    "Title": "Veelgestelde vragen",
+    "qOne": "Waarom zijn individuele lessen duurder dan groepslessen?",
+    "aOne": "Omdat alle aandacht gericht is op jou. Elke les wordt afgestemd op jouw prioriteiten, niveau en tempo. We besteden alleen tijd aan wat je werkelijk nodig hebt en wat resultaat oplevert. Het zijn op die manier niet zomaar lessen, ze maken deel uit van jouw persoonlijke leerstrategie.  ",
+    "qTwo": "Kan ik online lessen volgen?",
+    "aTwo": "Ja, geen probleem! Alle lessen vinden online plaats – handig, want zonder gereis of tijdverlies. Je kunt leren waar je ook bent, met dezelfde kwaliteit als bij fysieke lessen. Zorg wel dat je een snelle internetverbinding en een goede headset hebt. ",
+    "qThree": "Wanneer kan ik beginnen te spreken?",
+    "aThree": "Dit soort vragen beantwoord ik liefst altijd zo eerlijk mogelijk. Hoe snel iemand gaat spreken hangt af van een aantal factoren die deels subjectief zijn. Zo heeft de een meer tijd nodig om zelfvertrouwen te krijgen dan de ander. De een is extravert, de ander meer introvert. En je zult eerst moeten werken aan een goede uitspraak, je zult basisgrammatica moeten beheersen en je moet je woordenschat constant uitbreiden. Dit laatste is voor spreken het belangrijkste! Ik begin zo vroeg mogelijk met spreekvaardigheid en het lukt me steeds weer cursisten aan het praten te krijgen. Dan moet het bij jou ook lukken!",
+    "qFour": "Moet ik eerst een bepaald niveau hebben?",
+    "aFour": "Nee hoor, iedereen is welkom: van beginner tot gevorderde. Voor elk niveau zijn er speciale leermiddelen, ontwikkeld in Nederland voor hoogopgeleide anderstaligen. Deze leermiddelen vul ik aan met eigengemaakt materiaal."
+  },
+  "forms": {
+    "Title": "Zet vandaag de eerste stap",
+    "Subtitle": "Meld je aan voor een proefles en ontdek zelf hoe een persoonlijke aanpak beter werkt.",
+    "Name": "naam",
+    "Email": "e-mail",
+    "Message": "Jouw bericht",
+    "Btn": "Vraag consultatie aan"
+  },
+  "footer": {
+    "NavigationLable": "Navigatie",
+    "Education": "Over het onderwijs",
+    "About": "Over mij",
+    "Rew": "Beoordelingen",
+    "FAQ": "FAQ",
+    "Contacts": "Contact",
+    "ContactMeLabel": "Neem contact met mij op",
+    "Btn": "Een consultatie aanvragen",
+    "ContactsEmail": "b.th.lohmann@gmail.com",
+    "GetAcquaintedLable": "Maak kennis",
+    "GetAcquainted": "Voorwaarden"
+  },
+  "terms": {
+    "Title": "Privétaalonderricht (Russisch en Nederlands)",
+    "SubTitle": "Algemene tarieven en voorwaarden",
+    "FeesTitle": "Tarieven",
+    "Fee60": "Privétaalles via Zoom (60 minuten) — €70.00",
+    "Fee80": "Privétaalles via Zoom (80 minuten) — €90.00",
+    "ConditionsTitle": "Voorwaarden",
+    "Cond1": "Eén les duurt minimaal 60 minuten. De standaardduur van een les is 1 uur en 20 minuten (80 minuten).",
+    "Cond2": "Een geplande les dient minimaal 24 uur vóór aanvang van de les te worden afgezegd; wordt de les later of niet afgezegd, dan wordt de les aan de leerling volledig in rekening gebracht. ",
+    "Cond3": "De docent annuleert een geplande les minimaal 24 uur vóór aanvang van de les; wordt deze later of niet afgezegd, dan wordt de les volledig vergoed door de docent. ",
+    "Cond4": "De voorwaarden genoemd onder punt 2 en 3 gelden niet als er sprake is van overmacht (behoudens omstandigheden die verband houden met beroepsuitoefening, verkeersopstoppingen, gepland bezoek aan een arts dat uitloopt, opgehouden worden op het werk e.d.). Indien overmachtssituaties zich eens in de zeven dagen of vaker voordoen, gelden deze niet langer als overmacht. ",
+    "Cond5": "Een geplande les kan in overleg 24 uur van tevoren kosteloos worden verzet naar een andere dag binnen de lopende week. Indien de verplaatste les opnieuw wordt geannuleerd, wordt de les volledig door de leerling betaald, ongeacht overmachtsomstandigheden. ",
+    "Cond6": "Indien de leerling te laat inlogt op de les, eindigt de les conform eerder overeengekomen lestijden met volledige betaling van de les.   ",
+    "Cond7": "Betaling geschiedt hetzij per les, dan wel  per vooruitbetaling; betaling geschiedt niet achteraf. ",
+    "Cond8": "Aanvang van de lessen houdt in dat bovenstaande tarieven en voorwaarden zijn geaccepteerd door de leerling(e) dan wel door degene die haar/zijn lessen bekostigt. ",
+    "Cond9": "De leerling (dan wel degene die de lessen bekostigt) en de docent verplichten zich ertoe eventuele geschillen in der minne te schikken. ",
+    "Cond10": "Docent en leerling verbinden zich ertoe om eventuele conflicten in goed overleg op te lossen."
+  }
+}

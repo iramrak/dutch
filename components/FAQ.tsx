@@ -1,23 +1,23 @@
 'use client';
 import { useState } from 'react';
-import { useLanguage } from '@/app/LanguageContext';
+import { useTranslations } from 'next-intl';
 
 export default function FAQ() {
-  const { t } = useLanguage();
-  const [open, setOpen] = useState(null);
+  const t = useTranslations('faq');
+  const [open, setOpen] = useState<number | null>(null);
 
   const faqs = [
-    { q: t('faq','qOne'), a: t('faq','aOne') },
-    { q: t('faq','qTwo'), a: t('faq','aTwo') },
-    { q: t('faq','qThree'), a: t('faq','aThree') },
-    { q: t('faq','qFour'), a: t('faq','aFour') },
+    { q: t('qOne'), a: t('aOne') },
+    { q: t('qTwo'), a: t('aTwo') },
+    { q: t('qThree'), a: t('aThree') },
+    { q: t('qFour'), a: t('aFour') },
   ];
 
-  const toggle = (i) => setOpen(open === i ? null : i);
+  const toggle = (i: number) => setOpen(open === i ? null : i);
 
   return (
     <section className=" mx-auto p-6 mt-[80px]" id='FAQ'>
-      <h1 className="text-[36px] leading-[34px] font-semibold mb-6 lg:text-[50px] lg:leading-[50px] lg:w-[30%]">{t('faq','Title')}</h1>
+      <h1 className="text-[36px] leading-[34px] font-semibold mb-6 lg:text-[50px] lg:leading-[50px] lg:w-[30%]">{t('Title')}</h1>
 
       <div className="space-y-2">
         {faqs.map((item, i) => (
